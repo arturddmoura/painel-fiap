@@ -58,6 +58,6 @@ function display_c() {
 
 function display_ct() {
     var x = new Date();
-    document.getElementById('ct').innerHTML = x.toLocaleString();
+    document.getElementById('ct').innerHTML = x.toLocaleString('pt-br');
     display_c();
 }
