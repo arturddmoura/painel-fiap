@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/battery.css" />
+    <link rel="stylesheet" href="assets/css/motor.css" />
+    <link rel="stylesheet" href="assets/css/player.css" />
+
+    <title>Painel do carro</title>
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header__toggle ">
+            <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+    </header>
+    <div class="l-navbar show" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo active">
+                    <i class="bx bxs-car nav__logo-icon"></i>
+                    <span class="nav__logo-name">Painel do carro</span>
+                </a>
+
+                <div class="nav__list">
+                    <a href="/portao.html" class="nav__link">
+                        <i class="bx bxs-car-garage nav__icon"></i>
+                        <span class="nav__name">Abrir o portão</span>
+                    </a>
+
+                    <a href="/luz.html" class="nav__link">
+                        <i class="bx bxs-bulb nav__icon"></i>
+                        <span class="nav__name">Ligar a luz</span>
+                    </a>
+
+                    <a href="/camera.html" class="nav__link">
+                        <i class="bx bxs-camera-movie nav__icon"></i>
+                        <span class="nav__name">Ver câmeras</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+
+        <div>
+            <section class="player">
+                <div class="player__card">
+                    <div class="player__data">
+                        <img class="player__img" src="assets/img/album-cover.jpeg">
+                        <p class="player__text">Bluesman - Baco Exu do Blues</p>
+                        <div class="music__div">
+                            <i class='bx bx-skip-previous music__icon'></i>
+                            <i class='bx bx-play music__icon'></i>
+                            <i class='bx bx-skip-next music__icon'></i>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <div>
+            <section class=" battery">
+                <div class="battery__card">
+                    <div class="battery__data">
+                        <p class="battery__text">Nível de bateria</p>
+                        <h1 class="battery__percentage">
+                            20%
+                        </h1>
+
+                        <p class="battery__status">
+                            Bateria baixa <i class="ri-plug-line"></i>
+                        </p>
+                    </div>
+
+                    <div class="battery__pill">
+                        <div class="battery__level">
+                            <div class="battery__liquid"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div>
+            <section class="motor">
+                <div class="motor__card">
+                    <div class="motor__data">
+                        <p class="motor__text">Temperatura do motor</p>
+                        <h1 class="motor__percentage">
+                            82 C°
+                        </h1>
+
+                        <p class="motor__status">
+                            Temperatura normal <i class="ri-plug-line"></i>
+                        </p>
+                    </div>
+
+                    <div class="motor__pill">
+                        <div class="motor__level">
+                            <div class="motor__liquid"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+
+    </div>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

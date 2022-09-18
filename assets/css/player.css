@@ -1,0 +1,141 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Light Theme ==========*/
+    --text-color: rgb(37, 37, 37);
+    --text-color-light: #a1a1a1;
+    --body-color: hsl(0, 0%, 98%);
+    --container-color: hsl(0, 0%, 93%);
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Rubik', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 2.75rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+:root .dark-theme {
+    --text-color: #fff;
+    --text-color-light: #a1a1a1;
+    --body-color: hsl(0, 0%, 14%);
+    --container-color: hsl(0, 0%, 9%);
+}
+
+/*=============== BASE ===============*/
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::-moz-selection {
+    background: var(--text-color-light);
+    color: var(--text-color);
+}
+
+*::selection {
+    background: var(--text-color-light);
+    color: var(--text-color);
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*=============== player ===============*/
+.player {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+}
+
+.player__card {
+    position: relative;
+    width: 400px;
+    height: 190px;
+    background-color: var(--container-color);
+    padding: 1.4rem 2rem;
+    margin-top: 1.2rem;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.player__text {
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: var(--text-color-light);
+}
+
+.music__div {
+    display: block;
+    text-align: center;
+}
+
+.music__icon {
+    font-size: 2rem;
+    display: inline-flex;
+}
+
+.player__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 320px) {
+    .player__card {
+        zoom: 0.8;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 430px) {
+    .player__card {
+        width: 400px;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .player__card {
+        zoom: 1.5;
+    }
+}
