@@ -71,7 +71,8 @@ a {
 
 .camera__card {
     position: relative;
-    width: 400px;
+    width: 300px;
+    margin-left: 4rem;
     height: 310px;
     background-color: var(--container-color);
     padding: 1.4rem 2rem;
