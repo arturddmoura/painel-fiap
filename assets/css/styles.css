@@ -3,7 +3,7 @@
 
 /*===== VARIABLES CSS =====*/
 :root {
-    --nav-width: 68px;
+    --nav-width: 85px;
 
     /*===== Colors =====*/
     --first-color: #333333;
@@ -36,41 +36,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-/*===== HEADER =====*/
-.header {
-    width: 100%;
-    height: var(--header-height);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    background-color: var(--white-color);
-    z-index: var(--z-fixed);
-    transition: 0.5s;
-}
-
-.header__toggle {
-    color: var(--first-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.header__img {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.header__img img {
-    width: 40px;
 }
 
 /*===== NAV =====*/
@@ -108,7 +73,7 @@ a {
 }
 
 .nav__logo-icon {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     color: var(--white-color);
 }
 
@@ -129,7 +94,7 @@ a {
 }
 
 .nav__icon {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
 }
 
 /*Show navbar movil*/
@@ -161,20 +126,6 @@ a {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
         padding-left: calc(var(--nav-width) + 2rem);
-    }
-
-    .header {
-        height: calc(var(--header-height) + 1rem);
-        padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-    }
-
-    .header__img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .header__img img {
-        width: 45px;
     }
 
     .l-navbar {
