@@ -45,6 +45,11 @@ function startTimerLuz() {
     }, 1000);
 }
 
+function startLuz() {
+    document.getElementById('count').style = 'color:#99CC99;';
+    startTimerLuz();
+}
+
 function startEmergencia() {
     var counter = 10;
     var pause = false;
