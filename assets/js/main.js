@@ -45,9 +45,25 @@ function startTimerLuz() {
     }, 1000);
 }
 
-function startLuz() {
-    document.getElementById('count').style = 'color:#99CC99;';
-    startTimerLuz();
+function startEmergencia() {
+    var counter = 10;
+    var pause = false;
+    setInterval(function () {
+        counter--;
+        if (counter >= 0) {
+            span = document.getElementById('count');
+            span.innerHTML = counter;
+        }
+        if (counter === 0) {
+            alert('As autoridades foram acionadas!');
+            clearInterval(counter);
+        }
+    }, 1000);
+}
+
+function emergencia() {
+    document.getElementById('count').style = 'color:#8B1C00;';
+    startEmergencia();
 }
 
 /*===== hora  =====*/
