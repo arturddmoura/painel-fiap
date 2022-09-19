@@ -92,7 +92,7 @@ a {
 .battery__card {
     position: relative;
     width: 300px;
-    margin-left: 4.8rem;
+    margin-left: 4.4rem;
     height: 260px;
     background-color: var(--container-color);
     padding: 1.4rem 2rem;
