@@ -40,6 +40,10 @@ a {
     text-decoration: none;
 }
 
+header {
+    zoom: 0.8;
+}
+
 .headerWeather {
     text-align: right;
     font-size: var(--normal-font-size);
@@ -197,18 +201,6 @@ a {
     /*Add padding body desktop*/
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px);
-    }
-}
-
-/* For medium devices */
-@media screen and (max-width: 500px) {
-    header {
-        zoom: 0.8;
-    }
-}
-@media screen and (max-width: 300px) {
-    header {
-        zoom: 0.5;
     }
 }
 
