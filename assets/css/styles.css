@@ -205,6 +205,12 @@ header {
 }
 
 /* For large devices */
+@media screen and (max-width: 1000px) {
+    header {
+        zoom: 0.8;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     header {
         zoom: 1.5;
