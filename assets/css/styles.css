@@ -40,10 +40,6 @@ a {
     text-decoration: none;
 }
 
-header {
-    zoom: 0.86;
-}
-
 .headerWeather {
     text-align: right;
     font-size: var(--normal-font-size);
@@ -206,13 +202,21 @@ header {
 
 /* For large devices */
 @media screen and (max-width: 1000px) {
-    header {
-        zoom: 0.8;
+    .headerWeather {
+        zoom: 0.85;
+    }
+
+    .headerText {
+        zoom: 0.85;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    header {
-        zoom: 1.5;
+    .headerWeather {
+        zoom: 1.1;
+    }
+
+    .headerText {
+        zoom: 1.1;
     }
 }
