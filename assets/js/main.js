@@ -25,7 +25,7 @@ function startTimer() {
     }, 1000);
 }
 function start() {
-    document.getElementById('count').style = 'color:#99CC99;';
+    document.getElementById('count').style = 'color:#198754;';
     startTimer();
 }
 
@@ -46,7 +46,7 @@ function startTimerLuz() {
 }
 
 function startLuz() {
-    document.getElementById('count').style = 'color:#99CC99;';
+    document.getElementById('count').style = 'color:#198754;';
     startTimerLuz();
 }
 
