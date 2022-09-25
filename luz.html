@@ -18,7 +18,17 @@
     <title>Painel do carro</title>
 </head>
 
-<body id="body-pd">
+<body id="body-pd" onload="display_ct();">
+    <header class="header" id="header">
+        <p class="headerText">
+            <span>22°C</span>
+            <i class='bx bxs-cloud headerWeather'></i>
+            <i class='bx bx-bluetooth'></i>
+            <i class='bx bx-wifi headerWeather'></i>
+
+            <span id="ct"></span>
+        </p>
+    </header>
     <div class="l-navbar show" id="nav-bar">
         <nav class="nav">
             <div>
@@ -41,6 +51,21 @@
                     <a href="./luz.html" class="nav__link active">
                         <i class="bx bxs-bulb nav__icon"></i>
                         <span class="nav__name">Ligar a luz</span>
+                    </a>
+
+                    <a href="./maps.html" class="nav__link">
+                        <i class="bx bxs-map nav__icon"></i>
+                        <span class="nav__name">Ver mapa</span>
+                    </a>
+
+                    <a href="./contatos.html" class="nav__link ">
+                        <i class="bx bxs-contact nav__icon"></i>
+                        <span class="nav__name">Contatos</span>
+                    </a>
+
+                    <a href="./compras.html" class="nav__link">
+                        <i class="bx bxs-shopping-bag nav__icon"></i>
+                        <span class="nav__name">Lista de compras</span>
                     </a>
 
                     <a href="./camera.html" class="nav__link">

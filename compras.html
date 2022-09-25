@@ -14,6 +14,8 @@
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/portao.css" />
+    <link rel="stylesheet" href="assets/css/compras.css" />
+
 
     <title>Painel do carro</title>
 </head>
@@ -43,7 +45,7 @@
                         <span class="nav__name">Emergência</span>
                     </a>
 
-                    <a href="./portao.html" class="nav__link active">
+                    <a href="./portao.html" class="nav__link">
                         <i class="bx bxs-car-garage nav__icon"></i>
                         <span class="nav__name">Abrir o portão</span>
                     </a>
@@ -63,7 +65,7 @@
                         <span class="nav__name">Contatos</span>
                     </a>
 
-                    <a href="./compras.html" class="nav__link">
+                    <a href="./compras.html" class="nav__link active ">
                         <i class="bx bxs-shopping-bag nav__icon"></i>
                         <span class="nav__name">Lista de compras</span>
                     </a>
@@ -80,17 +82,19 @@
     <div>
         <section class="portao">
             <div class="portao__card">
-                <p class="portao__text">Tem certeza que deseja abrir o portão?</p>
+                <p class="portao__text">Lista de compras</p>
                 <div class="portao__data">
-                    <div class="d-flex justify-content-center">
-                        <button onclick="start()" type="button" class="btn btn-secondary mr-1">Sim</button>
-                        <a href="./index.html" class="btn btn-secondary" role="button">Não</a>
+                    <div id="checklist">
+                        <input id="01" type="checkbox" name="r" value="1" checked>
+                        <label for="01">Coca-Cola</label>
+                        <input id="02" type="checkbox" name="r" value="2">
+                        <label for="02">Queijo</label>
+                        <input id="03" type="checkbox" name="r" value="3">
+                        <label for="03">Ovo</label>
+                        <input id="04" type="checkbox" name="r" value="3">
+                        <label for="04">Pão</label>
                     </div>
                 </div>
-                <p class="portao_subtitle">O portão abrirá em
-                    <span id="count">5</span> segundos.
-                </p>
-
             </div>
 
 
