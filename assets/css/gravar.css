@@ -95,7 +95,7 @@ a {
 }
 
 .gravar__text {
-    margin-bottom: 3rem;
+    margin-bottom: 0.2rem;
     margin-top: 0.7rem;
     text-align: center;
     color: var(--text-color);
@@ -112,9 +112,6 @@ a {
     .gravar__card {
         zoom: 0.8;
     }
-    .gravar__text {
-        margin-bottom: 1rem;
-    }
 }
 
 /* For medium devices */
@@ -123,17 +120,11 @@ a {
         width: 450px;
         height: 320px;
     }
-    .gravar__text {
-        margin-bottom: 1rem;
-    }
 }
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
     .gravar__card {
         zoom: 1.5;
-    }
-    .gravar__text {
-        margin-bottom: 1rem;
     }
 }
