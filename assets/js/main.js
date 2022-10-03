@@ -82,3 +82,24 @@ function display_ct() {
     document.getElementById('ct').innerHTML = x.toLocaleString('pt-br');
     display_c();
 }
+
+function change() {
+    // no ';' here
+    var elem = document.getElementById('myButton1');
+    if (elem.value == 'Agendado') elem.value = 'Gravar';
+    else elem.value = 'Agendado';
+}
+
+function change2() {
+    // no ';' here
+    var elem = document.getElementById('myButton2');
+    if (elem.value == 'Agendado') elem.value = 'Gravar';
+    else elem.value = 'Agendado';
+}
+
+function change3() {
+    // no ';' here
+    var elem = document.getElementById('myButton3');
+    if (elem.value == 'Agendado') elem.value = 'Gravar';
+    else elem.value = 'Agendado';
+}
